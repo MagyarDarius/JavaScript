@@ -1,0 +1,112 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#logo img{
+  height: 60px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #800000;
+  font-weight: bold;
+}
+
+#social img {
+    height: 50px;
+    width: 50px;
+}
+
+#cim {
+  background: url('main-min.png') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+  color: #800000;
+}
+
+.gombok{
+  background-color: #800000;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#lenyeg {
+  background-color: #a4161a;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+#lenyeg h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#lenyeg #kiscim{
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.kartya {
+  background-color: white;
+  color: #333;
+  border-radius: 8px;
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+.kartya img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.kartya h3 {
+  color: #800000;
+}
+
+.kartya .gombok {
+  margin-top: 15px;
+  background-color: #800000;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  color: #800000;
+  font-weight: bold;
+  border-top: 1px solid #ddd;
+}

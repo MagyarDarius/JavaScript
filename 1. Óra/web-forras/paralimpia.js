@@ -37,7 +37,7 @@ teliLeirasok[5]="Az ülő jégkorongot Svédországban találták ki az 1960-as 
 
 
 function sportagak(evszak){
-    mappa == evszak;
+    mappa = evszak;
     if (evszak=="nyari") {
         nyarisportagak.split(',').forEach(kiir);
     } else if(evszak=="teli") {
@@ -55,15 +55,15 @@ function megNez(evszak,index) {
         document.getElementById('leiras').innerHTML=nyariLeirasok[index]; 
         document.getElementById('evszak').innerHTML="Nyári paralimpiai sportág"; 
         document.getElementById('sportag').innerHTML=nyarisportagak.split(',')[index];
-        document.getElementById('piktorgram').alt=nyarisportagak.split(',')[index];
-        document.getElementById('piktorgram').title=nyarisportagak.split(',')[index];
+        document.getElementById('piktogram').alt=nyarisportagak.split(',')[index];
+        document.getElementById('piktogram').title=nyarisportagak.split(',')[index];
     } else if (evszak=="teli") {
         document.getElementById('leiras').innerHTML=teliLeirasok[index]; 
         document.getElementById('evszak').innerHTML="Téli paralimpiai sportág"; 
         document.getElementById('sportag').innerHTML=telisportagak.split(',')[index];
-        document.getElementById('piktorgram').alt=telisportagak.split(',')[index];
-        document.getElementById('piktorgram').title=telisportagak.split(',')[index];
+        document.getElementById('piktogram').alt=telisportagak.split(',')[index];
+        document.getElementById('piktogram').title=telisportagak.split(',')[index];
     }
-    document.getElementById('piktorgram').src="sportagkepek/"+evszak+"/p"+index+".png";  
+    document.getElementById('piktogram').src="sportagkepek/"+evszak+"/p"+index+".png";  
     
 }
