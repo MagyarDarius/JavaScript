@@ -1,4 +1,3 @@
-/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
@@ -15,13 +14,15 @@ header {
   justify-content: space-between;
   background-color: white;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
 }
 
 #logo img{
   height: 60px;
+  background-size: unset;
 }
 
 nav a {
@@ -37,12 +38,18 @@ nav a {
 }
 
 #cim {
-  background: url('main-min.png') no-repeat center center/cover;
+  background: url('main-min.png');
   height: 400px;
-  display: flex;
+  padding-left: 20px;
   align-items: center;
-  padding-left: 40px;
   color: #800000;
+  padding-top: 30px;
+}
+
+#szoveg-tipus{
+  font-family: 'Great Vibes';
+  padding-top: 5px;
+  font-size: 20px;
 }
 
 .gombok{
@@ -66,40 +73,32 @@ nav a {
   margin-bottom: 10px;
 }
 
-#lenyeg #kiscim{
+#kiscim{
   font-style: italic;
   margin-bottom: 40px;
+  font-family: 'Great Vibes';
+  font-size: 20px;
 }
 
 .cards {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
+  flex-wrap: nowrap;
 }
 
 .kartya {
-  background-color: white;
   color: #333;
   border-radius: 8px;
   width: 250px;
   padding: 20px;
   text-align: center;
+  flex: auto;
 }
 
-.kartya img {
-  width: 100%;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-.kartya h3 {
-  color: #800000;
-}
-
-.kartya .gombok {
+.gombok {
   margin-top: 15px;
-  background-color: #800000;
+  background-color: white;
+  color: #800000;
 }
 
 footer {
@@ -109,4 +108,14 @@ footer {
   color: #800000;
   font-weight: bold;
   border-top: 1px solid #ddd;
+}
+
+.hangszerek{
+  color: white;
+  margin-top: 30px;
+}
+
+#gomb{
+  background-color: #800000;
+  color: white;
 }
