@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="login.css" type="text/css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <div id="doboz">
+    <h2>Bejelentkezés</h2>
+
+    <label for="nev">Név:</label><br>
+    <input type="text" id="nev"><br>
+    <div id="nevHiba" class="error"></div>
+
+    <label for="kor">Kor:</label><br>
+    <input type="number" id="kor"><br>
+    <div id="korHiba" class="error"></div>
+
+    <label>
+        Elfogadtam a felhasználói szabályzatot: <br><input type="checkbox" id="szabalyzat">
+    </label><br>
+    <div id="szabalyzatHiba" class="error"></div>   
+
+    <button id="submit-button" onclick="validalas()">Elküldés</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+    background-color: wheat;
+}
+#doboz {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #aaa;
+  margin: 50px auto;
+  background-color: white;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+
+#submit-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#kor{
+    width: 95%;
+    margin-top: 7px;
+}
+
+#nev{
+    width: 95%;
+    margin-top: 7px;
+}
+#szabalyzat{
+    margin-bottom: 10px;
+    margin-top: 7px;
+}
+.error{
+    margin-top: 20px;
+    margin-bottom: 7px;
+}
