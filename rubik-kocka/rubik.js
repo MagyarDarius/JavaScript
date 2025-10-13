@@ -7,17 +7,20 @@ cimkep.onmouseout = function(){
     cimkep.src = "sematikus.png"
 };
 //2.feladat
-const erdekesseg = document.getElementsByClassName("erdekesseg");
-
-erdekesseg.onclick = function(){
-    erdekesseg.classList.add("nagyobb");
-    erdekesseg.classList.remove("erdekesseg");
-};
-//3. feladat
-function submit(){
-    let szul_ev = document.getElementById("szul_ev").value;
-    if(szul_ev > 1975){
-        let hany_eve = szul_ev-1975;
-        
+const erdekessegek = document.querySelectorAll(".erdekesseg");
+erdekessegek.forEach((erdekesseg) => {
+    erdekesseg.onclick = ()=> {
+        erdekesseg.classList.toggle("nagyobb");
     }
-}
+});
+
+//3. feladat
+const urlap = document.getElementById("urlap");
+const szulEv = document.getElementById("szul_ev").value;
+const evekSzama = document.getElementById("evek_szama");
+urlap.onsubmit = () => {
+    event.preventDefault();
+    let kulonbseg = szulEv - 1975;
+    evekSzama.innerText = 'Már '+ kulonbseg +  'éve létezett a Rubik kocka, amikor megszülettél'
+
+};
