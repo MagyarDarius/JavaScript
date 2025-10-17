@@ -1,7 +1,5 @@
-const { name } = require("browser-sync");
-
 let state = {
-    products: [
+    products : [
         {
             name: "Teszt termék 1",
             price: 2500,
@@ -14,11 +12,31 @@ let state = {
         },
         {
             name: "Teszt termék 3",
-            price: 5500,
-            isInStock: true
+            price: 5550,
+            isInStock: false
         }
     ]
 }
-function renderProduct(){
-    var productsHTML
+function renderProducts() {
+    var productsHTML = '';
+    for (const products of state.products){
+        productsHTML +=`
+        <div class="card m-2 p-2 ${products.isInStock ? "" : "bg-danger"}">
+            <p>${products.name}</p>
+            <p>${products.price}</p>
+        </div>
+        `
+    }
+    document.getElementById('product-list-component').innerHTML = productsHTML;
+}
+window.onload = renderProducts;
+
+document.getElementById('create-product').onsubmit =
+(event) => {
+    event.preventDefault;
+    state.products.push({
+        name:event.target.elements.name.value,
+        price:event.target.elements.price.value,
+        isInStock:event.target.elements.isInStock.checked
+    })
 }
