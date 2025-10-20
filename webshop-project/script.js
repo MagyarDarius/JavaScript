@@ -30,13 +30,16 @@ function renderProducts() {
     document.getElementById('product-list-component').innerHTML = productsHTML;
 }
 window.onload = renderProducts;
-
-document.getElementById('create-product').onsubmit =
-(event) => {
-    event.preventDefault;
+document.getElementById('create-product').onsubmit =  (event) => {
+    event.preventDefault();
+    const name = event.target.elements.name.value;
+    const price = event.target.elements.price.value;
+    const isInStock = event.target.elements.isInStock.checked;
     state.products.push({
-        name:event.target.elements.name.value,
-        price:event.target.elements.price.value,
-        isInStock:event.target.elements.isInStock.checked
-    })
+        name,
+        price,
+        isInStock
+    });
+
+    renderProducts();
 }
