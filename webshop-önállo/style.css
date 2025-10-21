@@ -1,0 +1,81 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+header{
+    background-color:darkmagenta;
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+    width: 100%;
+}
+#uj_termek{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+#termekek{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.termek{
+    border: black, solid, 2px;
+    border-radius: 7px;
+    margin: 30px;
+}
+.termek-szoveg{
+    margin: 10px;
+}
+#bevitelMezo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+}
+#bevitelMezo input{
+    width: 200px;
+    padding: 8px;
+    height: 40px;
+}
+#bevitelMezo button{
+    padding: 8px 16px;
+    cursor: pointer;
+    align-self: center;
+    width: 200px;
+    height: 40px;
+}
+#bevitelMezo label {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+#bevitelMezo input[type="checkbox"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+footer{
+    background-color: darkmagenta;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

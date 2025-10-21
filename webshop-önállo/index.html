@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>Kenyérshop</header>
+    <section id="termekek">
+        <div class="termek">
+            <p class="termek-szoveg">Barna Kenyér</p>
+            <p class="termek-szoveg">1500Ft/kg</p>
+            <img src="barna.png" alt="Barna Kenyér" title="Barna Kenyér">
+        </div>
+        <div class="termek">
+            <p class="termek-szoveg">Fehér Kenyér</p>
+            <p class="termek-szoveg">1000Ft/kg</p>
+            <img src="fehér.jpg" alt="Fehér Kenyér" title="Fehér Kenyér">
+        </div>
+        <div class="termek">
+            <p class="termek-szoveg">Teljes Kiörlésü Kenyér</p>
+            <p class="termek-szoveg">1300Ft/kg</p>
+            <img src="teljes.jpg" alt="Teljes Kiörlésü Kenyér" title="Teljes Kiörlésü Kenyér">
+        </div>
+        <div class="termek">
+            <p class="termek-szoveg">Kukorica Kenyér</p>
+            <p class="termek-szoveg">1600Ft/kg</p>
+            <img src="kukorica_kenyér.png" alt="Kukorica Kenyér" title="Kukorica Kenyér">
+        </div>
+        <div class="termek">
+            <p class="termek-szoveg">Gluténmentes Kenyér</p>
+            <p class="termek-szoveg">1400Ft/kg</p>
+            <img src="gluténmentes.png" alt="Gluténmentes Kenyér" title="Gluténmentes Kenyér">
+        </div>
+        </section>
+        <section id="bevitelMezo">
+        <input type="text" id="name" placeholder="A termék neve">
+        <input type="number" id="price" placeholder="A termék ára">
+        <label for="isInStock">Készleten van-e?</label><input type="checkbox" id="isInStock">
+        <button>Termék hozzáadása</button>
+    </section>
+    <footer>Minden jog fenttartva &copy;</footer>
+    <script src="script.js"></script>
+</body>
+</html>
