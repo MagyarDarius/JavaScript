@@ -22,7 +22,7 @@ img{
     height: 200px;
     width: 200px;
 }
-#termekek{
+#product-list-component{
     display: flex;
     flex-direction: row;
     padding: 30px;
@@ -31,11 +31,12 @@ img{
     border: black, solid, 2px;
     border-radius: 7px;
     margin: 30px;
+    width: 300px;
 }
 .termek-szoveg{
     margin: 10px;
 }
-#bevitelMezo{
+#create-product{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,25 +45,25 @@ img{
     bottom: 15%;
     width: 100%;
 }
-#bevitelMezo input{
+#create-product input{
     width: 200px;
     padding: 8px;
     height: 40px;
 }
-#bevitelMezo button{
+#create-product button{
     padding: 8px 16px;
     cursor: pointer;
     align-self: center;
     width: 200px;
     height: 40px;
 }
-#bevitelMezo label {
+#create-product label {
     display: flex;
     align-items: center;
     gap: 4px;
     cursor: pointer;
 }
-#bevitelMezo input[type="checkbox"] {
+#create-product input[type="checkbox"] {
     margin: 0;
     width: 18px;
     height: 18px;
