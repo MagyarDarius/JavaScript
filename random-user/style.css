@@ -1,0 +1,32 @@
+ body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 20px auto;
+}
+form div {
+    margin-bottom: 12px;
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+}
+input, select {
+    width: 100%;
+    padding: 6px;
+    box-sizing: border-box;
+}
+#profilePreview {
+    max-width: 120px;
+    display: block;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+button {
+    padding: 10px 16px;
+    margin-top: 10px;
+}
+#regForm{
+    border: 2px solid black;
+    padding: 20px;
+    background-color: rgb(146, 231, 106);
+}
