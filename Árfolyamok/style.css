@@ -1,0 +1,27 @@
+body {
+        background: rgb(117, 33, 117);
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+}
+.card {
+        background: white;
+        padding: 40px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        width: 500px;
+        text-align: center;
+}
+h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+}
+table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+}
+th, td {
+        border: 1px solid #ccc;
+        padding: 10px;
+        color: rgb(117, 33, 117);
+}
