@@ -1,0 +1,133 @@
+:root {
+    --light-blue: #1283b9;
+    --dark-blue: #06435f;
+}
+
+.hero {
+    height: 400px;
+    background: url("../img/balaton_bg.jpg") center center / cover no-repeat;
+}
+
+.main-title {
+    font-family: 'Marhey', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-shadow: 5px 5px 10px #000000;
+}
+
+@media (max-width: 992px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+}
+
+.custom-navbar {
+    background-color: var(--dark-blue);
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    padding: 8px 15px;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: rgba(255,255,255,0.8);
+    color: #000 !important;
+    border-radius: 5px;
+}
+
+.section-title {
+    font-family: 'Marhey', cursive;
+    font-variant: small-caps;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.shadow-blue {
+    box-shadow: 1px 1px 3px var(--dark-blue);
+}
+
+.custom-table {
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 1px 1px 10px var(--dark-blue);
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 10px;
+    border: 1px solid var(--dark-blue);
+}
+
+.custom-table thead {
+    background-color: var(--dark-blue);
+    color: white;
+    font-family: 'Marhey', cursive;
+}
+
+.custom-table tbody td {
+    background-color: rgba(18,131,185,0.1);
+}
+
+.custom-table tbody tr:hover {
+    background-color: rgba(18,131,185,0.7);
+}
+
+.custom-table tbody td:first-child {
+    width: 25%;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: grayscale(60%);
+    transition: 1s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.04);
+}
+
+.modal-title {
+    font-family: 'Marhey', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.modal-content img {
+    box-shadow: 1px 1px 3px var(--dark-blue);
+}
+
+.footer {
+    background-color: var(--light-blue);
+    color: white;
+    font-family: 'Marhey', cursive;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 10px black;
+    padding-top: 50px;
+    position: relative;
+}
+
+.footer svg {
+    display: block;
+    width: 100%;
+}
