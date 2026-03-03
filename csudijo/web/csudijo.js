@@ -1,21 +1,23 @@
-$(document).ready(function () {
-    $.ajax({
-        type: "GET",
-        url: "/api/legnepszerubb",
-        dataType: "json",
-        success: function (valasz) {
-            $("#legnepszerubb").text(valasz.etelNev);
-        },
-        error: function () {
-            $("#legnepszerubb").text("LECSÓ KOLBÁSZCSIPSSZEL");
-        }
-    });
-});
-function vendegkonyv(){
-    const comment = document.getElementById("bejegyzes")
+fetch("/api/legnepszerubb")
+.then(data => data.json())
+.then(data => {
+    document.getElementById("legnepszerubb").innerText = data.etelNev
+})
 
-    if (bejegyzes === "") {
-        alert("A bejegyzés nem lehet üres!");
-        return;
-    }
+function vendegkonyv(){
+    const bejegyzes = document.getElementById("bejegyzes").value;
+    fetch("/api/vendegkonyv",{
+        method: "post",
+        headers:{
+            "Content-Type": "application/json",
+        },
+        body:JSON.stringify({ bejegyzes: bejegyzes})
+    })
+    .then(response =>{
+        if(response.ok)
+        {
+            document.getElementById("bejegyzes").value="";
+            alert("Köszönjük a bejegyzését!");
+        }
+    })
 }
