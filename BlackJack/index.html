@@ -8,15 +8,38 @@
 </head>
 <body>
     <header>
-
+        <h1>BlackJack</h1>
     </header>
-    <section>
 
-    </section>
+    <section class="game">
+    <div class="table">
 
-    <footer>
+        <div class="participants">
+    <div class="dealer">
+        <h2>Dealer</h2>
+        <div class="cards" id="dealer-cards"></div>
+        <p>Score: <span id="dealer-score">0</span></p>
+    </div>
 
-    </footer>
+    <div class="player">
+        <h2>Player</h2>
+        <div class="cards" id="player-cards"></div>
+        <p>Score: <span id="player-score">0</span></p>
+    </div>
+</div>
+
+        <div class="controls">
+            <button id="start-btn">Start Game</button>
+            <button id="hit-btn">Hit</button>
+            <button id="stand-btn">Stand</button>
+        </div>
+
+        <div class="result">
+            <h2 id="result-text">Press Start to play</h2>
+        </div>
+
+    </div>
+</section>
     <script src="script.js"></script>
 </body>
 </html>
