@@ -12,7 +12,8 @@
     </header>
 
     <section class="game">
-    <div class="table">
+        <div id="game-wrapper">
+            <div class="table">
 
         <div class="participants">
     <div class="dealer">
@@ -39,6 +40,22 @@
         </div>
 
     </div>
+    <div class="betting" id="betting-panel">
+            <h2>Betting</h2>
+
+            <p>Balance: <span id="balance">1000</span> $</p>
+            <p>Current Bet: <span id="current-bet">0</span> $</p>
+
+            <div class="bet-buttons">
+                <button class="bet-btn" data-value="10">+10</button>
+                <button class="bet-btn" data-value="50">+50</button>
+                <button class="bet-btn" data-value="100">+100</button>
+            </div>
+
+            <button id="clear-bet">Clear Bet</button>
+        </div>
+        </div>
+    
 </section>
     <script src="script.js"></script>
 </body>

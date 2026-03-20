@@ -56,3 +56,28 @@ button {
 button{
     background-color: rgba(65, 131, 65, 0.8);
 }
+#game-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.betting {
+    background-color: rgba(40, 92, 40, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    width: 200px;
+    text-align: center;
+}
+
+.bet-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.betting.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
