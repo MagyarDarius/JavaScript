@@ -1,18 +1,55 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    background-color: rgb(38, 114, 172);
-}
-
 body {
+    margin: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(135deg, #2672ac, #1b4f72);
+    font-family: Arial, sans-serif;
+    color: white;
 }
 
-#table {
-    border-radius: 4px;
-    background-color: black;
-    height: 100px;
-    width: 100px;
+.container {
+    background: rgba(0,0,0,0.7);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.form input {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
 }

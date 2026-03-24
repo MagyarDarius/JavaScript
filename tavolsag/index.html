@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Távolság</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Távolság kalkulátor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="table"></div>
-    <script src="script.js"></script>
+
+<div class="container">
+    <h1>Távolság kalkulátor</h1>
+
+    <div class="form">
+        <input type="text" id="from" placeholder="Honnan? (pl. Pécs)">
+        <input type="text" id="to" placeholder="Hova? (pl. Budapest)">
+        <button onclick="getDistance()">Számítás</button>
+    </div>
+
+    <div id="result" class="result hidden">
+        <p><strong>Távolság:</strong> <span id="distance"></span></p>
+        <p><strong>Légvonal:</strong> <span id="airDistance"></span></p>
+        <p><strong>Menetidő:</strong> <span id="time"></span></p>
+
+        <a id="mapLink" target="_blank">
+            <button>Megnyitás Google Maps-ben</button>
+        </a>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
