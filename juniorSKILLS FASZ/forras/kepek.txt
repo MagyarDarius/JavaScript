@@ -1,0 +1,26 @@
+kép neve
+	alternatív szövege
+	buborékszövege
+-----------------------------
+
+velenceito.jpg
+	Velencei-tó
+	Készítette: Susulyka - Wikimedia
+hevizito.jpg
+	Hévízi-tó
+	Készítette: Civertan Grafikai Stúdió - Wikimedia
+
+Képgaléria: (itt csak a buborékszöveg van megadva)
+-----------
+balaton.jpg
+	Balaton (Készítette: Posza Róbert - Pixabay)
+dunakanyar.jpg
+	Dunakanyar (Készítette: Civertan - Wikimedia)
+tiszato.jpg
+	Tisza-tó (Készítette: Frank Paul Silye - Wikimedia )
+tisza.jpg
+	Tisza (Készítette: Takkk - Wikimedia )
+zala.jpg
+	Zala folyó (Készítette: Civertan - Wikimedia )
+raba.jpg
+	Rába folyó (Készítette: Civertan - Wikimedia )
