@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&display=swap');
+
 header{
     height: 400px;
     background-image: url(../img/balaton_bg.jpg);
     background-position: center center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,4 +16,36 @@ nav{
 
 nav a:active {
     background-color: rgba(255, 255, 255, .8);
+}
+
+h1{
+    color: white;
+}
+h1, h2, footer, th{
+    font-family: "Marhey", sans-serif;
+    color: white;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 10px black;
+}
+
+h2{
+    font-variant: small-caps;
+    text-decoration: underline wavy;
+    color: #06435f;
+}
+
+@media screen and (max-width: 992px) {
+    h1{
+        font-size: 1.5rem;
+    }
 }
